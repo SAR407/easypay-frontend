@@ -1,0 +1,70 @@
+/* Auth.css */
+
+/* Full page background + centering */
+.auth-container {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  min-height: 100vh;        /* full screen height */
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* dark blue gradient */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card (Login/Register Box) */
+.auth-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+}
+
+/* Headings */
+.auth-card h2 {
+  margin-bottom: 20px;
+  color: #1e3c72;
+}
+
+/* Inputs */
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.auth-card input:focus,
+.auth-card select:focus {
+  border-color: #1e3c72;
+  box-shadow: 0 0 5px rgba(30, 60, 114, 0.5);
+}
+
+/* Buttons */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #1e3c72;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-card button:hover {
+  background: #16325c;
+}
+
+/* Error messages */
+.auth-error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
